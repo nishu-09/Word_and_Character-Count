@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word count</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="count">
+        <h2>Word Count</h2>
+        <label class="container">
+            <textarea class="first" id="word-count-input"></textarea>
+            <span class="form-input">Message</span>
+        </label>
+            <strong><span id="word-count">0</span>Words |</strong>
+            <strong><span id="character-count">0</span>characters</strong>
+        <button onclick="countwords()">Click</button>
+        <button id="clr">reset</button>
+    </div>
+
+    <script>
+        const countwords=()=>{
+            let noc=document.getElementById('word-count-input').value.length;
+            document.getElementById('character-count').innerHTML=noc;
+            
+            let woc=document.getElementById("word-count-input").value.split(" ").length;
+            document.getElementById("word-count").innerHTML=woc;
+        }
+        const clrs=document.getElementById('clr');
+        const text=document.getElementById("word-count-input");
+        clrs.onclick=()=>{
+            text.value="";
+            document.getElementById('word-count').innerHTML=0;
+            document.getElementById('character-count').innerHTML=0;
+        }
+    </script>
+    <!-- <script src="jsfile.js"></script> -->
+</body>
+</html>

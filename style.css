@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+body{
+    
+    margin-top: 190px;
+    margin-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    background-attachment: scroll;
+    /* box-shadow: 1px 2px 3px gainsboro; */
+}
+.count{
+    
+    background-color: aquamarine;
+    padding:3rem;
+    border-radius: 4px;
+    width:50%;
+    margin: 0,auto;
+    opacity: 0.9;
+    text-shadow: 1px 2px 3px rgba(0, 0,0,0.3);
+    box-shadow: 6px 8px 50px 10px gainsboro;
+    
+}
+.count h2{
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    /* text-align: center; */
+}
+.container{
+    position: relative;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    display: block;
+    
+}
+.first{
+    padding:13px 15px;
+    border-radius: 8px;
+    border: 2px solod #1a73e8;
+    outline:0;
+    width:100%;
+    
+}
+.form-input{
+    position: absolute;
+    top:-17px;
+    left:10px;
+    color:#1a73e8;
+    font-size: 0.85rem;
+    padding-right: 0.33rem;
+    padding-left: 0.33rem;
+    background:aquamarine;
+    transition: all 015s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: sans-serif;
+    text-transform: capitalize;
+
+}
+textarea{
+    min-height: 6em;
+    max-height: 50vh;
+    width:100%;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    
+}
+button {
+    width:100px;
+    padding:10px;
+    margin-top: 15px;
+    position: relative;
+    left:250px;
+    text-transform: uppercase;
+    color:white;
+    background-color: #1a73e8;
+    border-radius: 4px;
+    outline:none;
+    border: none;
+    display: grid;
+}
+button:hover{
+    background-color: navy;
+}
